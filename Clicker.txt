@@ -61,7 +61,7 @@ cost:1000 money
 on tick:yield 10 money
 req:5 printer:max
 tag:build
-icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans%20titre.jpg?raw=true
+icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans_titre-removebg-preview%20(1).png?raw=true
 
 *pcmig
 name:Pc de Migwel
