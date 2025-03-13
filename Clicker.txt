@@ -67,14 +67,14 @@ tag:garage
 name:BMW X6 de Carlos
 desc:X6 pour faire des go fast de BTC a haut risque.
 cost:1500000 money
-on tick:yield 100000 money
+on tick:yield 30000 money
 tag:car
 
 *goform
 name:Siège sociale de Go Formation
 desc:Forme des Traders en trader novice
 cost:2500000
-on tick:yield 300000 money
+on tick:yield 30000 money
 tag:format
 
 Upgrades
