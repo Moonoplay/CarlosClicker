@@ -1,0 +1,71 @@
+Let's make a game!
+  name:Bitcoin Clicker
+  by:Moon
+  forum post:3546
+
+Layout
+   use default
+
+Settings
+background:https://file.garden/Z9GRFWr3xh_Qkwbv/fond
+
+Buttons
+*bitcoin
+name:Bitcoin
+desc:Appuyer sur ce boutton pour miner du BTC 
+on click:yield 1 money
+class:bigButton
+
+Resources
+*money
+name:Bitcoin
+desc:Tout ce bitcoin est à toi tu es riche!
+
+Buildings
+*printer
+name:Carlos
+desc:Carlos mine des Bitcoins pour vous.
+cost:50 money
+on tick:yield 1 money
+tag:build
+
+*epicprinter
+name:Impression 3D 
+desc:Developé par Carlos, cette Imprimante à l'incroyable possibilité d'imprimé des bitcoin physique!
+cost:1000 money
+on tick:yield 10 money
+req:5 printer:max
+tag:build
+
+Upgrades
+*printupgrade
+name:Tenue de Trader
+desc:Cette nouvelle tenue pour Carlos lui permet de miner du btc 1,25 fois plus vite!
+cost:500 money
+   passive:multiply money yield of tag:build by 1.25
+req:2 printer
+
+*epicprintupgrade
+name:Buse en Cron
+desc:Ces nouvelle buses fabriqué à base de Cron pourrons vous servir pour triplé la vitesse d'impression de vos Imprimante 3d
+cost:3500 money
+	passive:multiply money yield of tag:build by 3
+req:4 epicprinter
+
+Shinies
+*moneybox
+  name:Btc érrant
+  on click:yield (random(50,500)) money
+  movement:anywhere
+  frequency:60
+
+Achievements
+*moneyach
+  name:Nouveau Riche
+  desc:Gagner 100 bitcoins
+  req:100 money:earned
+
+*tradernovice
+  name:Trader Novice
+  desc:Gagner 5000 bitcoins
+  req:100 money:earned
