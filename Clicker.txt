@@ -14,20 +14,6 @@ image-rendering: pixelated;
 
 }
 
-.resourcesIconSize {
-
-height: 64px;
-width: 64px;
-
-}
-
-.buildingIconSize {
-
-height: 64px;
-width: 64px;
-
-}
-
 Settings
 background:https://static.vecteezy.com/ti/vecteur-libre/p1/9879938-pixel-art-or-et-minerais-recevant-mine-avec-chariot-fond-8bit-vectoriel.jpg
 
@@ -50,7 +36,7 @@ Buildings
 name:Carlos
 desc:Carlos mine des Bitcoins pour vous.
 cost:50 money
-on tick:yield 1 money
+on tick:yield 20 money
 tag:person
 icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans_titre-removebg-preview.png?raw=true
 
@@ -58,7 +44,7 @@ icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans_titre-removebg-pr
 name:Imprimate 3D 
 desc:Developé par Carlos, cette Imprimante à l'incroyable possibilité d'imprimé des bitcoin physique!
 cost:1000 money
-on tick:yield 10 money
+on tick:yield 500 money
 req:5 printer:max
 tag:build
 icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans_titre-removebg-preview%20(1).png?raw=true
@@ -67,23 +53,29 @@ icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans_titre-removebg-pr
 name:Pc de Migwel
 desc: Migwel accepte de prêter son PC avec sa super GTX 1060 ti pour miner du BTC en masse!
 cost:10000 money
-on tick:yield 500 money
+on tick:yield 5000 money
 tag:buildPC
 
 *garage
 name:Garage
 desc:Un garage remplis de PC minant du Bitcoin, un peu comme un datacenter en moins classe.
 cost:900000 money
-on tick:yield 1000 money
+on tick:yield 10000 money
 tag:garage
 
 *xsix
 name:BMW X6 de Carlos
 desc:X6 pour faire des go fast de BTC a haut risque.
-cost:15000000 money
-on tick:yield 3500 money
+cost:1500000 money
+on tick:yield 100000 money
 tag:car
 
+*goform
+name:Siège sociale de Go Formation
+desc:Forme des Traders en trader novice
+cost:2500000
+on tick:yield 300000 money
+tag:format
 
 Upgrades
 *printupgrade
@@ -114,6 +106,12 @@ cost:10000000 money
 	passive:multiply money yield of tag:car by 2
 req:3 xsix
 
+*goformupgrade
+name:Formateur pro
+desc:Carlos a contacté un de ses collègues de chez Cron formation et la employé chez Go formation. Augmente les bénéfices de Go formation de 40%.
+cost:2000000
+passive:multiply money yield of tag:format by 1.40
+req:1 goform
 
 Shinies
 *moneybox
@@ -152,3 +150,10 @@ req:1000000 money:earned
 name:Expert Trader
 desc:Gagner 500M de BTC!
 req:500000000 money:earned
+
+*formationgo
+name:GO FORMATION
+desc:Acheter le siège social de Go formation.
+req:1 goform
+
+
