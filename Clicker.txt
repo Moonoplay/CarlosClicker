@@ -14,7 +14,7 @@ image-rendering: pixelated;
 
 }
 
-.moneyIconSize {
+.resourcesIconSize {
 
 height: 64px;
 width: 64px;
