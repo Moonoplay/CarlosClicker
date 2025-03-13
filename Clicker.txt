@@ -118,4 +118,4 @@ Achievements
 *4k6fps
 name:4k 60fps
 desc:Installer des RTX 4060 dans vos PC de Migwel.
-req:1 pcmig:owned
+req:10 pcmig:earned
