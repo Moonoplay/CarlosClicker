@@ -36,7 +36,7 @@ Buildings
 name:Carlos
 desc:Carlos mine des Bitcoins pour vous.
 cost:50 money
-on tick:yield 20 money
+on tick:yield 5 money
 tag:person
 icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans_titre-removebg-preview.png?raw=true
 
