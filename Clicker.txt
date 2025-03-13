@@ -73,7 +73,7 @@ tag:car
 *goform
 name:Siège sociale de Go Formation
 desc:Forme des Traders en trader novice
-cost:2500000
+cost:2500000 money
 on tick:yield 30000 money
 tag:format
 
