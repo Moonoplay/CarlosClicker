@@ -68,6 +68,13 @@ cost:10000 money
 on tick:yield 500 money
 tag:buildPC
 
+*garage
+name:Garage
+desc:Un garage remplis de PC minant du Bitcoin, un peu comme un datacenter en moins classe.
+cost:900000 money
+on tick:yield 1000 money
+tag:garage
+
 Upgrades
 *printupgrade
 name:Tenue de Trader
@@ -107,3 +114,8 @@ Achievements
   name:Trader Novice
   desc:Gagner 5000 bitcoins
   req:100000 money:earned
+
+*4k6fps
+name:4k 60fps
+desc:Installer des RTX 4060 dans vos PC de Migwel.
+req:10 pcmig:owned
