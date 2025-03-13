@@ -149,4 +149,4 @@ req:1000000 money:earned
 *traderexpert
 name:Expert Trader
 desc:Gagner 500M de BTC!
-req: 500000000 money:earned
+req:500000000 money:earned
