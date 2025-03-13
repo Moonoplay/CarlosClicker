@@ -22,7 +22,7 @@ Buttons
 name:Bitcoin
 desc:Appuyer sur ce boutton pour miner du BTC 
 on click:yield 1 money
-class:bigButton
+class:bigButton hasFlares
 
 Resources
 *money
