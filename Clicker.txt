@@ -14,6 +14,20 @@ image-rendering: pixelated;
 
 }
 
+.moneyIconSize {
+
+height: 64px;
+width: 64px;
+
+}
+
+.buildingIconSize {
+
+height: 64px;
+width: 64px;
+
+}
+
 Settings
 background:https://static.vecteezy.com/ti/vecteur-libre/p1/9879938-pixel-art-or-et-minerais-recevant-mine-avec-chariot-fond-8bit-vectoriel.jpg
 
