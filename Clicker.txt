@@ -7,7 +7,7 @@ Layout
    use default
 
 Settings
-background:https://file.garden/Z9GRFWr3xh_Qkwbv/fond
+background:https://static.vecteezy.com/ti/vecteur-libre/p1/9879938-pixel-art-or-et-minerais-recevant-mine-avec-chariot-fond-8bit-vectoriel.jpg
 
 Buttons
 *bitcoin
