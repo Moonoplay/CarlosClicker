@@ -51,7 +51,7 @@ name:Carlos
 desc:Carlos mine des Bitcoins pour vous.
 cost:50 money
 on tick:yield 1 money
-tag:build
+tag:person
 
 *epicprinter
 name:Impression 3D 
@@ -75,6 +75,14 @@ cost:900000 money
 on tick:yield 1000 money
 tag:garage
 
+*xsix
+name:BMW X6 de Carlos
+desc:X6 pour faire des go fast de BTC a haut risque.
+cost:15000000 money
+on tick:yield 3500 money
+tag:car
+
+
 Upgrades
 *printupgrade
 name:Tenue de Trader
@@ -94,8 +102,16 @@ req:4 epicprinter
 name:RTX 4060
 desc:Achete une nouvelle carte graphique pour vos PC de Migwel, permet de le rendre 4 fois plus puissant.
 cost:100000 money
-passive:multiply money yield of tag:buildPC by 4
+	passive:multiply money yield of tag:buildPC by 4
 req:5 pcmig
+
+*xsixupgrade
+name:Pack Cron2TAb
+desc:Achète un X6 edition Cron2TAB line sport turbo goataga.
+cost:10000000 money
+	passive:multiply money yield of tag:car by 2
+req:3 xsix
+
 
 Shinies
 *moneybox
@@ -115,3 +131,7 @@ Achievements
   desc:Gagner 5000 bitcoins
   req:100000 money:earned
 
+*carvroumvroum
+name:X6 vroum vroum
+desc:Acheter le BMW X6 de Carlos
+req:1 xsix
