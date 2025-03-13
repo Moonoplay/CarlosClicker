@@ -115,7 +115,3 @@ Achievements
   desc:Gagner 5000 bitcoins
   req:100000 money:earned
 
-*4k6fps
-name:4k 60fps
-desc:Installer des RTX 4060 dans vos PC de Migwel.
-req:10 pcmig:earned
