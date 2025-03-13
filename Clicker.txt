@@ -66,7 +66,6 @@ name:Pc de Migwel
 desc: Migwel accepte de prêter son PC avec sa super GTX 1060 ti pour miner du BTC en masse!
 cost:10000 money
 on tick:yield 500 money
-req:10 epicprinter:max
 tag:buildPC
 
 Upgrades
