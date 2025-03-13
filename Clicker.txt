@@ -61,6 +61,14 @@ on tick:yield 10 money
 req:5 printer:max
 tag:build
 
+*pcmig
+name:Pc de Migwel
+desc: Migwel accepte de prêter son PC avec sa super GTX 1060 ti pour miner du BTC en masse!
+cost:10000 money
+on tick:yield 500 money
+req: 10 epicprinter:max
+tag:buildPC
+
 Upgrades
 *printupgrade
 name:Tenue de Trader
@@ -75,6 +83,13 @@ desc:Ces nouvelle buses fabriqué à base de Cron pourrons vous servir pour trip
 cost:3500 money
 	passive:multiply money yield of tag:build by 3
 req:4 epicprinter
+
+*pcmigupgrade
+name:RTX 4060
+desc:Achete une nouvelle carte graphique pour vos PC de Migwel, permet de le rendre 4 fois plus puissant.
+cost:100000 money
+passive:multiply money yield of tag:buildPC by 4
+req:5 pcmig
 
 Shinies
 *moneybox
@@ -92,4 +107,4 @@ Achievements
 *tradernovice
   name:Trader Novice
   desc:Gagner 5000 bitcoins
-  req:100 money:earned
+  req:100000 money:earned
