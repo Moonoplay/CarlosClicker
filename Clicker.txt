@@ -128,10 +128,25 @@ Achievements
 
 *tradernovice
   name:Trader Novice
-  desc:Gagner 5000 bitcoins
+  desc:Gagner 10k bitcoins
   req:100000 money:earned
 
 *carvroumvroum
 name:X6 vroum vroum
 desc:Acheter le BMW X6 de Carlos
 req:1 xsix
+
+*traderamateur
+name:Trader Amateur
+desc:Gagner 500k de bitcoin
+req:500000 money:earned
+
+*traderpro
+name:Trader Pro
+desc:Gagner 1M de Bitcoin
+req:1000000 money:earned
+
+*traderexpert
+name:Expert Trader
+desc:Gagner 500M de BTC!
+req: 500000000 money:earned
