@@ -23,6 +23,7 @@ name:Bitcoin
 desc:Appuyer sur ce boutton pour miner du BTC 
 on click:yield 1 money
 class:bigButton hasFlares
+icon:https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/st_small_507x507-pad_600x600_f8f8f8-removebg-preview.png
 
 Resources
 *money
