@@ -55,12 +55,13 @@ tag:person
 icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans_titre-removebg-preview.png?raw=true
 
 *epicprinter
-name:Impression 3D 
+name:Imprimate 3D 
 desc:Developé par Carlos, cette Imprimante à l'incroyable possibilité d'imprimé des bitcoin physique!
 cost:1000 money
 on tick:yield 10 money
 req:5 printer:max
 tag:build
+icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans%20titre.jpg?raw=true
 
 *pcmig
 name:Pc de Migwel
