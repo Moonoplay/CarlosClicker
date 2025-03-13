@@ -29,6 +29,7 @@ Resources
 *money
 name:Bitcoin
 desc:Tout ce bitcoin est à toi tu es riche!
+icon:https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools%20(1).png
 
 Buildings
 *printer
