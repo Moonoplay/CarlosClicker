@@ -1,0 +1,69 @@
+CSS
+body {
+    background-color: #1a1a1a;
+    color: #f0c674;
+    font-family: 'Pixel', sans-serif;
+}
+
+#game.on {
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+}
+
+.bigButton {
+    background-color: #f39c12;
+    border: 3px solid #d35400;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-shadow: 2px 2px 0px #8e44ad;
+}
+
+.bigButton:hover {
+    background-color: #e67e22;
+}
+
+#store {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#store .item {
+    background: #34495e;
+    color: white;
+    border: 2px solid #2c3e50;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#store .item:hover {
+    background: #1abc9c;
+    cursor: pointer;
+}
+
+#upgrades {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#upgrades .upgrade {
+    background: #8e44ad;
+    color: white;
+    border: 2px solid #663399;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#upgrades .upgrade:hover {
+    background: #9b59b6;
+}
+
+#stats {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
