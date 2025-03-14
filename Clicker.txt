@@ -5,8 +5,7 @@ Let's make a game!
 
 Layout
    use default
-*ach
-  contains:Achievements
+
 
 Settings
 background:https://static.vecteezy.com/ti/vecteur-libre/p1/9879938-pixel-art-or-et-minerais-recevant-mine-avec-chariot-fond-8bit-vectoriel.jpg
