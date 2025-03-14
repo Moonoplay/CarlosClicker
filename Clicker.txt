@@ -5,7 +5,7 @@ Let's make a game!
 
 Layout
    use default
-*trophée
+*trophee
   contains:Achievements
 
 Settings
