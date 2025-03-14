@@ -74,7 +74,7 @@ tag:format
 name:Taupe chez l'URSSAF
 desc:Sandrine réduit tes impôts, abaissant le coût des bâtiments de 25%.
 cost:50000000 money
-passive:reduce cost of tag:build format garage car buildPC person by 0.25
+passive:multiply money yield of tag:build format garage car buildPC person by 1.25
 tag:ursaf
 
 *sandrine
