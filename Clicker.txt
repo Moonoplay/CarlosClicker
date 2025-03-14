@@ -84,6 +84,14 @@ cost:70000000 money
 passive:multiply money yield of tag:build format garage car buildPC person by 1.5
 tag:ursaf
 
+*sandrine
+name:Sandrine
+desc:Sandrine pousse Carlos a travailler plus. A l'achat Sandrine augmente ton nombre de clicks rend tes carlos 15 fois plus performant
+cost:400000000 money
+passive:multiply money yield of printer by 15
+passive:multiply money yield of bitcoin by 8
+tag:person
+
 Upgrades
 *printupgrade
 name:Tenue de Trader
@@ -139,12 +147,36 @@ desc:Pierre venant du murret du cabanont de jardin de 73bis grand rue. Multiplie
 passive:multiply money yield of bitcoin by 50
 cost:1000000 money
 
+*clickupgrade4
+name:Souris en Carbonne
+desc:Cette souris en carbonne de la carbonnerie. Multiplie tes clicks par 100.
+passive:multiply money yield of bitcoin by 100
+cost:10000000 money
+
+*clickupgrade5
+name:Souris en Cube
+desc:Cette souris est fabriquée a base de Lucas Cube Cubix. Multiplie tes clicks par 1000.
+passive:multiply money yield of bitcoin by 100
+cost:100000000 money
+
+*clickupgrade5
+name:Souris en Toilette de Migwel
+desc:Cette souris est fabriquée a base des reste des toilettes de Migwel après son passage. Multiplie tes clicks par 10000.
+passive:multiply money yield of bitcoin by 100
+cost:1000000000 money
+
 Shinies
 *moneybox
   name:Btc érrant
   on click:yield (random(50,500)) money
   movement:anywhere
   frequency:60
+
+*moneybox
+  name:Agent de l'Ursaf
+  on click:yield (random(-500000,50000000)) money
+  movement:anywhere
+  frequency:10
 
 Achievements
 *moneyach
@@ -181,5 +213,16 @@ req:500000000 money:earned
 name:GO FORMATION
 desc:Acheter le siège social de Go formation.
 req:1 goform
+
+*cubix
+name:CUBIXXXX
+desc:Acheter l'amélioration Souris en Cube.
+req:1 clickupgrade5
+
+*maximecarbonne
+name:MAXIMEEE CARBONNEE
+desc:Acheter l'amélioration Souris en carbonne.
+req:1 clickupgrade4
+
 
 
