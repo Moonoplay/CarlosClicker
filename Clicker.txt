@@ -5,6 +5,8 @@ Let's make a game!
 
 Layout
    use default
+*ach
+  contains:Achievements
 
 
 Settings
