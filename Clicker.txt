@@ -124,6 +124,18 @@ req:1 goform
 name:Souris en papier toilette
 desc:Cette souris en papier toilette viens des toilettes à Migwel. Multiplie tes clicks par deux.
 passive:multiply money yield of bitcoin by 2
+cost:50000 money
+
+*clickupgrade2
+name:Souris en bois
+desc:Fabriqué à base de bois de chêne venant du bois de grand rue. Multiplie tes clicks par dix.
+passive:multiply money yield of bitcoin by 10
+cost:500000
+
+*clickupgrade3
+name:Souris en pierre
+desc:Pierre venant du murret du cabanont de jardin de 73bis grand rue. Multiplie tes clicks par 50.
+passive:multiply money yield of bitcoin by 50
 
 Shinies
 *moneybox
