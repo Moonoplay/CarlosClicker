@@ -116,7 +116,7 @@ req:3 xsix
 *goformupgrade
 name:Formateur pro
 desc:Carlos a contacté un de ses collègues de chez Cron formation et la employé chez Go formation. Augmente les bénéfices de Go formation de 40%.
-cost:2000000
+cost:2000000 money
 passive:multiply money yield of tag:format by 1.40
 req:1 goform
 
