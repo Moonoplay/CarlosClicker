@@ -120,6 +120,11 @@ cost:2000000
 passive:multiply money yield of tag:format by 1.40
 req:1 goform
 
+*clickupgrade1
+name:Souris en papier toilette
+desc:Cette souris en papier toilette viens des toilettes à Migwel. Multiplie tes clicks par deux.
+passive:multiply money yield of bitcoin by 2
+
 Shinies
 *moneybox
   name:Btc érrant
