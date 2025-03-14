@@ -159,7 +159,7 @@ desc:Cette souris est fabriquée a base de Lucas Cube Cubix. Multiplie tes click
 passive:multiply money yield of bitcoin by 100
 cost:100000000 money
 
-*clickupgrade5
+*clickupgrade6
 name:Souris en Toilette de Migwel
 desc:Cette souris est fabriquée a base des reste des toilettes de Migwel après son passage. Multiplie tes clicks par 10000.
 passive:multiply money yield of bitcoin by 100
