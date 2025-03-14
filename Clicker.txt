@@ -224,5 +224,10 @@ name:MAXIMEEE CARBONNEE
 desc:Acheter l'amélioration Souris en carbonne.
 req:1 clickupgrade4
 
+*tradecron
+name:Cron Trader
+desc:Gagner 5000M de BTC!
+req:5000000000 money:earned
+
 
 
