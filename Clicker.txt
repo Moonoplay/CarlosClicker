@@ -121,37 +121,37 @@ req:1 goform
 
 *clickupgrade1
 name:Souris en papier toilette
-desc:Multiplie tes clics par 2.
+desc:Papier toilette venant des toilettes de Migwel. Multiplie tes clics par 2.
 cost:5000 money
 passive:multiply money yield of bitcoin by 2
 
 *clickupgrade2
 name:Souris en bois
-desc:Multiplie tes clics par 5.
+desc:Cette souris en bois a été fabriqué grâce au quelques arbres qui trainait sur Grand Rue. Multiplie tes clics par 5.
 cost:50000 money
 passive:multiply money yield of bitcoin by 5
 
 *clickupgrade3
 name:Souris en pierre
-desc:Multiplie tes clics par 10.
+desc:Cette souris en pierre à été fabriqué par Cailloux industrie. Multiplie tes clics par 10.
 cost:100000 money
 passive:multiply money yield of bitcoin by 10
 
 *clickupgrade4
 name:Souris en Carbonne
-desc:Multiplie tes clics par 20.
+desc:En carbonne forgé de la carbonnerie. Multiplie tes clics par 20.
 cost:1000000 money
 passive:multiply money yield of bitcoin by 20
 
 *clickupgrade5
 name:Souris en Cube
-desc:Multiplie tes clics par 50.
+desc:AHHH Lucas CUBEEEE CUBIX. Multiplie tes clics par 50.
 cost:10000000 money
 passive:multiply money yield of bitcoin by 50
 
 *clickupgrade6
 name:Souris en Toilette de Migwel
-desc:Multiplie tes clics par 100.
+desc:Cette souris a été construit avec les restes des toilletes de Grand rue qui on été détruit par Migwel. Multiplie tes clics par 100.
 cost:100000000 money
 passive:multiply money yield of bitcoin by 100
 
