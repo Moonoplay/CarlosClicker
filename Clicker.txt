@@ -77,6 +77,13 @@ cost:40000000 money
 on tick:yield 30000 money
 tag:format
 
+*ursaf
+name:Taupe chez l'ursaf
+desc:Sandrine aurait un contact chez l'ursaf qui pourrait baisser tes impots. Augmente tes revenues de 50%.
+cost:70000000 money
+passive:multiply money yield of tag:build format garage car buildPC person by 1.5
+tag:ursaf
+
 Upgrades
 *printupgrade
 name:Tenue de Trader
