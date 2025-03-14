@@ -167,6 +167,11 @@ cost:1000000000 money
 
 Shinies
 
+*moneybox
+  name:Btc érrant
+  on click:yield (random(50,500)) money
+  movement:anywhere
+  frequency:60
 
 *agent
   name:Agent de l'Ursaf
