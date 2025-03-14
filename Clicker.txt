@@ -151,19 +151,19 @@ cost:1000000 money
 name:Souris en Carbonne
 desc:Cette souris en carbonne de la carbonnerie. Multiplie tes clicks par 100.
 passive:multiply money yield of bitcoin by 100
-cost:10000000 money
+cost:100000000 money
 
 *clickupgrade5
 name:Souris en Cube
 desc:Cette souris est fabriquée a base de Lucas Cube Cubix. Multiplie tes clicks par 1000.
-passive:multiply money yield of bitcoin by 100
-cost:100000000 money
+passive:multiply money yield of bitcoin by 1000
+cost:1000000000 money
 
 *clickupgrade6
 name:Souris en Toilette de Migwel
 desc:Cette souris est fabriquée a base des reste des toilettes de Migwel après son passage. Multiplie tes clicks par 10000.
-passive:multiply money yield of bitcoin by 100
-cost:1000000000 money
+passive:multiply money yield of bitcoin by 10000
+cost:10000000000 money
 
 Shinies
 
@@ -223,6 +223,11 @@ req:1 clickupgrade4
 name:Cron Trader
 desc:Gagner 5000M de BTC!
 req:5000000000 money:earned
+
+*4k6fps
+name:4K 60FPS
+desc:Acheter l'amélioraton RTX 4060 pour le pc de Migwel
+req:1 pcmigupgrade
 
 
 
