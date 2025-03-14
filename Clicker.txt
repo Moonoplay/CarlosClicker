@@ -153,11 +153,7 @@ desc:Cette souris en carbonne de la carbonnerie. Multiplie tes clicks par 100.
 passive:multiply money yield of bitcoin by 100
 cost:10000000 money
 
-*clickupgrade5
-name:Souris en Cube
-desc:Cette souris est fabriquée a base de Lucas Cube Cubix. Multiplie tes clicks par 1000.
-passive:multiply money yield of bitcoin by 100
-cost:100000000 money
+
 
 *clickupgrade6
 name:Souris en Toilette de Migwel
