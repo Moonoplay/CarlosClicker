@@ -89,7 +89,7 @@ name:Sandrine
 desc:Sandrine pousse Carlos a travailler plus. A l'achat Sandrine augmente ton nombre de clicks rend tes carlos 15 fois plus performant
 cost:400000000 money
 passive:multiply money yield of printer by 15
-passive:multiply money yield of bitcoin by 8
+passive:multiply money yield of bitcoin by 1.01
 tag:person
 
 Upgrades
