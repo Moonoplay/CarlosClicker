@@ -173,13 +173,6 @@ Shinies
   movement:anywhere
   frequency:60
 
-*agent
-  name:Agent de l'Ursaf
-  on click:yield (random(-500000,50000000)) money
-  movement:anywhere
-  frequency:10
-  req:1 ursaf
-
 Achievements
 *moneyach
   name:Nouveau Riche
