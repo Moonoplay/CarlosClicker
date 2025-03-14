@@ -8,7 +8,6 @@ Layout
 *ach
   contains:Achievements
 
-
 Settings
 background:https://static.vecteezy.com/ti/vecteur-libre/p1/9879938-pixel-art-or-et-minerais-recevant-mine-avec-chariot-fond-8bit-vectoriel.jpg
 stylesheets:https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/styles.css
@@ -34,165 +33,154 @@ desc:Carlos mine des Bitcoins pour vous.
 cost:50 money
 on tick:yield 5 money
 tag:person
-icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans_titre-removebg-preview.png?raw=true
 
 *epicprinter
-name:Imprimate 3D 
-desc:Developé par Carlos, cette Imprimante à l'incroyable possibilité d'imprimé des bitcoin physique!
-cost:1000 money
-on tick:yield 500 money
-req:5 printer:max
+name:Imprimante 3D
+desc:Développée par Carlos, elle imprime des bitcoins physiques!
+cost:500 money
+on tick:yield 50 money
+req:3 printer:max
 tag:build
-icon:https://github.com/Moonoplay/CarlosClicker/blob/main/Sans_titre-removebg-preview%20(1).png?raw=true
 
 *pcmig
-name:Pc de Migwel
-desc: Migwel accepte de prêter son PC avec sa super GTX 1060 ti pour miner du BTC en masse!
-cost:10000 money
-on tick:yield 5000 money
+name:PC de Migwel
+desc:Migwel prête son PC avec une GTX 1060 Ti pour miner en masse!
+cost:5000 money
+on tick:yield 500 money
 tag:buildPC
 
 *garage
 name:Garage
-desc:Un garage remplis de PC minant du Bitcoin, un peu comme un datacenter en moins classe.
-cost:900000 money
-on tick:yield 10000 money
+desc:Un garage rempli de PC minant du Bitcoin.
+cost:100000 money
+on tick:yield 2500 money
 tag:garage
 
 *xsix
 name:BMW X6 de Carlos
-desc:X6 pour faire des go fast de BTC a haut risque.
-cost:1500000 money
-on tick:yield 30000 money
+desc:X6 pour faire des go fast de BTC à haut risque.
+cost:1000000 money
+on tick:yield 10000 money
 tag:car
 
 *goform
-name:Siège sociale de Go Formation
-desc:Forme des Traders en trader novice
-cost:40000000 money
+name:Siège social de Go Formation
+desc:Forme des traders novices.
+cost:20000000 money
 on tick:yield 30000 money
 tag:format
 
 *ursaf
-name:Taupe chez l'ursaf
-desc:Sandrine aurait un contact chez l'ursaf qui pourrait baisser tes impots. Augmente tes revenues de 50%.
-cost:70000000 money
-passive:multiply money yield of tag:build format garage car buildPC person by 1.5
+name:Taupe chez l'URSSAF
+desc:Sandrine réduit tes impôts, abaissant le coût des bâtiments de 25%.
+cost:50000000 money
+passive:reduce cost of tag:build format garage car buildPC person by 0.25
 tag:ursaf
 
 *sandrine
 name:Sandrine
-desc:Sandrine pousse Carlos a travailler plus. A l'achat Sandrine augmente ton nombre de clicks rend tes carlos 15 fois plus performant
-cost:400000000 money
-passive:multiply money yield of printer by 15
+desc:Sandrine pousse Carlos à travailler plus.
+cost:300000000 money
+passive:multiply money yield of printer by 3
 passive:multiply money yield of bitcoin by 1.01
 tag:person
 
 Upgrades
 *printupgrade
 name:Tenue de Trader
-desc:Cette nouvelle tenue pour Carlos lui permet de miner du btc 1,25 fois plus vite!
+desc:Augmente la vitesse de minage de Carlos de 1,25x.
 cost:500 money
-   passive:multiply money yield of tag:build by 1.25
+passive:multiply money yield of printer by 1.25
 req:2 printer
 
 *epicprintupgrade
 name:Buse en Cron
-desc:Ces nouvelle buses fabriqué à base de Cron pourrons vous servir pour triplé la vitesse d'impression de vos Imprimante 3d
-cost:3500 money
-	passive:multiply money yield of tag:build by 3
-req:4 epicprinter
+desc:Triple la vitesse d'impression de vos imprimantes 3D.
+cost:3000 money
+passive:multiply money yield of epicprinter by 3
+req:3 epicprinter
 
 *pcmigupgrade
 name:RTX 4060
-desc:Achete une nouvelle carte graphique pour vos PC de Migwel, permet de le rendre 4 fois plus puissant.
-cost:100000 money
-	passive:multiply money yield of tag:buildPC by 4
-req:5 pcmig
+desc:Augmente la puissance des PC de Migwel par 4.
+cost:50000 money
+passive:multiply money yield of pcmig by 4
+req:3 pcmig
 
 *xsixupgrade
 name:Pack Cron2TAb
-desc:Achète un X6 edition Cron2TAB line sport turbo goataga.
-cost:10000000 money
-	passive:multiply money yield of tag:car by 2
-req:3 xsix
+desc:Double les revenus du X6.
+cost:5000000 money
+passive:multiply money yield of xsix by 2
+req:2 xsix
 
 *goformupgrade
-name:Formateur pro
-desc:Carlos a contacté un de ses collègues de chez Cron formation et la employé chez Go formation. Augmente les bénéfices de Go formation de 40%.
-cost:2000000 money
-passive:multiply money yield of tag:format by 1.40
+name:Formateur Pro
+desc:Augmente les bénéfices de Go Formation de 40%.
+cost:1000000 money
+passive:multiply money yield of goform by 1.4
 req:1 goform
 
 *clickupgrade1
 name:Souris en papier toilette
-desc:Cette souris en papier toilette viens des toilettes à Migwel. Multiplie tes clicks par deux.
-cost:50000 money
+desc:Multiplie tes clics par 2.
+cost:5000 money
 passive:multiply money yield of bitcoin by 2
-
 
 *clickupgrade2
 name:Souris en bois
-desc:Fabriqué à base de bois de chêne venant du bois de grand rue. Multiplie tes clicks par dix.
-passive:multiply money yield of bitcoin by 10
-cost:500000 money
+desc:Multiplie tes clics par 5.
+cost:50000 money
+passive:multiply money yield of bitcoin by 5
 
 *clickupgrade3
 name:Souris en pierre
-desc:Pierre venant du murret du cabanont de jardin de 73bis grand rue. Multiplie tes clicks par 50.
-passive:multiply money yield of bitcoin by 50
-cost:1000000 money
+desc:Multiplie tes clics par 10.
+cost:100000 money
+passive:multiply money yield of bitcoin by 10
 
 *clickupgrade4
 name:Souris en Carbonne
-desc:Cette souris en carbonne de la carbonnerie. Multiplie tes clicks par 100.
-passive:multiply money yield of bitcoin by 100
-cost:100000000 money
+desc:Multiplie tes clics par 20.
+cost:1000000 money
+passive:multiply money yield of bitcoin by 20
 
 *clickupgrade5
 name:Souris en Cube
-desc:Cette souris est fabriquée a base de Lucas Cube Cubix. Multiplie tes clicks par 1000.
-passive:multiply money yield of bitcoin by 1000
-cost:1000000000 money
+desc:Multiplie tes clics par 50.
+cost:10000000 money
+passive:multiply money yield of bitcoin by 50
 
 *clickupgrade6
 name:Souris en Toilette de Migwel
-desc:Cette souris est fabriquée a base des reste des toilettes de Migwel après son passage. Multiplie tes clicks par 10000.
-passive:multiply money yield of bitcoin by 10000
-cost:10000000000 money
-
-Shinies
-
-*moneybox
-  name:Btc érrant
-  on click:yield (random(50,500)) money
-  movement:anywhere
-  frequency:60
+desc:Multiplie tes clics par 100.
+cost:100000000 money
+passive:multiply money yield of bitcoin by 100
 
 Achievements
 *moneyach
-  name:Nouveau Riche
-  desc:Gagner 100 bitcoins
-  req:100 money:earned
+name:Nouveau Riche
+desc:Gagner 100 bitcoins
+req:100 money:earned
 
 *tradernovice
-  name:Trader Novice
-  desc:Gagner 10k bitcoins
-  req:100000 money:earned
+name:Trader Novice
+desc:Gagner 10k bitcoins
+req:10000 money:earned
 
 *carvroumvroum
-name:X6 vroum vroum
+name:X6 Vroum Vroum
 desc:Acheter le BMW X6 de Carlos
 req:1 xsix
 
 *traderamateur
 name:Trader Amateur
-desc:Gagner 500k de bitcoin
+desc:Gagner 500k bitcoins
 req:500000 money:earned
 
 *traderpro
 name:Trader Pro
-desc:Gagner 1M de Bitcoin
+desc:Gagner 1M de Bitcoins
 req:1000000 money:earned
 
 *traderexpert
@@ -202,28 +190,10 @@ req:500000000 money:earned
 
 *formationgo
 name:GO FORMATION
-desc:Acheter le siège social de Go formation.
+desc:Acheter le siège social de Go Formation.
 req:1 goform
-
-*cubix
-name:CUBIXXXX
-desc:Acheter l'amélioration Souris en Cube.
-req:1 clickupgrade5
-
-*maximecarbonne
-name:MAXIMEEE CARBONNEE
-desc:Acheter l'amélioration Souris en carbonne.
-req:1 clickupgrade4
 
 *tradecron
 name:Cron Trader
 desc:Gagner 5000M de BTC!
 req:5000000000 money:earned
-
-*4k6fps
-name:4K 60FPS
-desc:Acheter l'amélioraton RTX 4060 pour le pc de Migwel
-req:1 pcmigupgrade
-
-
-
