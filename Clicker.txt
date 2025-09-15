@@ -1,196 +1,241 @@
 Let's make a game!
-  name:Bitcoin Clicker
-  by:Moon
-  forum post:3546
+  name: Bitcoin Clicker
+  by: Moon
+  forum post: 3546
 
 Layout
    use default
 
 Settings
-background:https://static.vecteezy.com/ti/vecteur-libre/p1/9879938-pixel-art-or-et-minerais-recevant-mine-avec-chariot-fond-8bit-vectoriel.jpg
-stylesheets:https://pastebin.com/raw/Pmwy8AQC
+background: https://static.vecteezy.com/ti/vecteur-libre/p1/9879938-pixel-art-or-et-minerais-recevant-mine-avec-chariot-fond-8bit-vectoriel.jpg
+stylesheets: https://pastebin.com/raw/Pmwy8AQC
 
 Buttons
 *bitcoin
-name:Bitcoin
-desc:Appuyer sur ce boutton pour miner du BTC 
-on click:yield 1 money
-class:bigButton hasFlares
-icon:https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools.png
+name: Bitcoin
+desc: Appuie sur ce bouton pour miner du BTC 
+on click: yield 1 money
+class: bigButton hasFlares
+icon: https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools.png
 
 Resources
 *money
-name:Bitcoin
-desc:Tout ce bitcoin est à toi tu es riche!
-icon:https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools%20(1).png
+name: Bitcoin
+desc: Tout ce bitcoin est à toi, tu es riche!
+icon: https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools%20(1).png
 
 Buildings
 *printer
-name:Carlos
-desc:Carlos mine des Bitcoins pour vous.
-cost:50 money
-on tick:yield 5 money
-tag:person
+name: Carlos
+desc: Carlos mine des Bitcoins pour vous.
+cost: 50 money
+on tick: yield 2 money
+tag: person
 
 *epicprinter
-name:Imprimante 3D
-desc:Développée par Carlos, elle imprime des bitcoins physiques!
-cost:500 money
-on tick:yield 50 money
-req:3 printer:max
-tag:build
+name: Imprimante 3D
+desc: Développée par Carlos, elle imprime des bitcoins physiques!
+cost: 500 money
+on tick: yield 15 money
+req: 3 printer:max
+tag: build
 
 *pcmig
-name:PC de Migwel
-desc:Migwel prête son PC avec une GTX 1060 Ti pour miner en masse!
-cost:5000 money
-on tick:yield 500 money
-tag:buildPC
+name: PC de Migwel
+desc: Migwel prête son PC avec une GTX 1060 Ti pour miner en masse!
+cost: 5000 money
+on tick: yield 150 money
+tag: buildPC
 
 *garage
-name:Garage
-desc:Un garage rempli de PC minant du Bitcoin.
-cost:100000 money
-on tick:yield 2500 money
-tag:garage
+name: Garage
+desc: Un garage rempli de PC minant du Bitcoin.
+cost: 100000 money
+on tick: yield 2000 money
+tag: garage
 
 *xsix
-name:BMW X6 de Carlos
-desc:X6 pour faire des go fast de BTC à haut risque. Te donnes 10 000 BTC par seconde
-cost:1000000 money
-on tick:yield 10000 money
-tag:car
+name: BMW X6 de Carlos
+desc: X6 pour faire des go fast de BTC à haut risque. Te donne 15 000 BTC par seconde
+cost: 1000000 money
+on tick: yield 15000 money
+tag: car
 
 *goform
-name:Siège social de Go Formation
-desc:Forme des traders novices. Te donnes 30 000 BTC par secondes
-cost:20000000 money
-on tick:yield 30000 money
-tag:format
+name: Siège social de Go Formation
+desc: Forme des traders novices. Te donne 150 000 BTC par seconde
+cost: 20000000 money
+on tick: yield 150000 money
+tag: format
+
+# Nouveaux "Carlos printers" pour progression
+*superprinter
+name: Super Carlos
+desc: Carlos a bu un Red Bull, il double sa productivité!
+cost: 500000 money
+on tick: yield 2500 money
+tag: person
+
+*megaprinter
+name: Méga Carlos
+desc: Carlos a cloné ses bras pour miner plus vite!
+cost: 2000000 money
+on tick: yield 15000 money
+tag: person
+
+*gigaprinter
+name: Giga Carlos
+desc: Carlos fusionne avec une machine et devient un mineur cyborg.
+cost: 50000000 money
+on tick: yield 300000 money
+tag: person
 
 *ursaf
-name:Taupe chez l'URSSAF
-desc:Sandrine réduit tes impôts, abaissant le coût des bâtiments de 25%.
-cost:50000000 money
-passive:multiply money yield of tag:build format garage car buildPC person by 1.25
-tag:ursaf
+name: Taupe chez l'URSSAF
+desc: Sandrine réduit tes impôts, abaissant le coût des bâtiments de 10%.
+cost: 50000000 money
+passive: reduce cost of tag:build format garage car buildPC person by 0.9
+tag: ursaf
 
 *sandrine
-name:Sandrine
-desc:Sandrine pousse Carlos à travailler plus. Augmente tes revenus de tes Carlos de 15%.
-cost: 100 money
-passive:multiply money yield of printer by 1.25
-tag:person
+name: Sandrine
+desc: Sandrine pousse Carlos à travailler plus. Augmente ses revenus de 10%.
+cost: 200 money
+passive: multiply money yield of printer superprinter megaprinter gigaprinter by 1.1
+tag: person
 
 Upgrades
 *printupgrade
-name:Tenue de Trader
-desc:Augmente la vitesse de minage de Carlos de 1,25x.
-cost:500 money
-passive:multiply money yield of printer by 1.25
-req:2 printer
+name: Tenue de Trader
+desc: Augmente la vitesse de minage de Carlos de 25%.
+cost: 1000 money
+passive: multiply money yield of printer by 1.25
+req: 2 printer
 
 *epicprintupgrade
-name:Buse en Cron
-desc:Triple la vitesse d'impression de vos imprimantes 3D.
-cost:3000 money
-passive:multiply money yield of epicprinter by 3
-req:3 epicprinter
+name: Buse en Cron
+desc: Double la vitesse d’impression des imprimantes 3D.
+cost: 10000 money
+passive: multiply money yield of epicprinter by 2
+req: 3 epicprinter
 
 *pcmigupgrade
-name:RTX 4060
-desc:Augmente la puissance des PC de Migwel par 4.
-cost:50000 money
-passive:multiply money yield of pcmig by 4
-req:3 pcmig
+name: RTX 4060
+desc: Augmente la puissance des PC de Migwel par 3.
+cost: 150000 money
+passive: multiply money yield of pcmig by 3
+req: 3 pcmig
 
 *xsixupgrade
-name:Pack Cron2TAb
-desc:Double les revenus du X6.
-cost:5000000 money
-passive:multiply money yield of xsix by 2
-req:2 xsix
+name: Pack Cron2TAb
+desc: Double les revenus du X6.
+cost: 20000000 money
+passive: multiply money yield of xsix by 2
+req: 2 xsix
 
 *goformupgrade
-name:Formateur Pro
-desc:Augmente les bénéfices de Go Formation de 40%.
-cost:1000000 money
-passive:multiply money yield of goform by 1.4
-req:1 goform
+name: Formateur Pro
+desc: Augmente les bénéfices de Go Formation de 40%.
+cost: 50000000 money
+passive: multiply money yield of goform by 1.4
+req: 1 goform
 
+*superprintupgrade
+name: Énergie Monster
+desc: Super Carlos minent 2x plus vite!
+cost: 2000000 money
+passive: multiply money yield of superprinter by 2
+req: 2 superprinter
+
+*megaprintupgrade
+name: Bras bioniques
+desc: Méga Carlos minent 3x plus vite!
+cost: 10000000 money
+passive: multiply money yield of megaprinter by 3
+req: 2 megaprinter
+
+*gigaprintupgrade
+name: Fusion avec la Blockchain
+desc: Giga Carlos minent 4x plus vite!
+cost: 100000000 money
+passive: multiply money yield of gigaprinter by 4
+req: 2 gigaprinter
+
+Click Upgrades
 *clickupgrade1
-name:Souris en papier toilette
-desc:Papier toilette venant des toilettes de Migwel. Multiplie tes clics par 2.
-cost:5000 money
-passive:multiply money yield of bitcoin by 2
+name: Souris en papier toilette
+desc: Multiplie tes clics par 2.
+cost: 5000 money
+passive: multiply money yield of bitcoin by 2
 
 *clickupgrade2
-name:Souris en bois
-desc:Cette souris en bois a été fabriqué grâce au quelques arbres qui trainait sur Grand Rue. Multiplie tes clics par 5.
-cost:50000 money
-passive:multiply money yield of bitcoin by 5
+name: Souris en bois
+desc: Multiplie tes clics par 3.
+cost: 50000 money
+passive: multiply money yield of bitcoin by 3
 
 *clickupgrade3
-name:Souris en pierre
-desc:Cette souris en pierre à été fabriqué par Cailloux industrie. Multiplie tes clics par 10.
-cost:100000 money
-passive:multiply money yield of bitcoin by 10
+name: Souris en pierre
+desc: Multiplie tes clics par 5.
+cost: 100000 money
+passive: multiply money yield of bitcoin by 5
 
 *clickupgrade4
-name:Souris en Carbonne
-desc:En carbonne forgé de la carbonnerie. Multiplie tes clics par 20.
-cost:1000000 money
-passive:multiply money yield of bitcoin by 20
+name: Souris en Carbone
+desc: Multiplie tes clics par 10.
+cost: 1000000 money
+passive: multiply money yield of bitcoin by 10
 
 *clickupgrade5
-name:Souris en Cube
-desc:AHHH Lucas CUBEEEE CUBIX. Multiplie tes clics par 50.
-cost:10000000 money
-passive:multiply money yield of bitcoin by 50
+name: Souris en Cube
+desc: Multiplie tes clics par 20.
+cost: 10000000 money
+passive: multiply money yield of bitcoin by 20
 
 *clickupgrade6
-name:Souris en Toilette de Migwel
-desc:Cette souris a été construit avec les restes des toilletes de Grand rue qui on été détruit par Migwel. Multiplie tes clics par 100.
-cost:100000000 money
-passive:multiply money yield of bitcoin by 100
+name: Souris en Toilettes de Migwel
+desc: Multiplie tes clics par 50.
+cost: 100000000 money
+passive: multiply money yield of bitcoin by 50
 
 Achievements
 *moneyach
-name:Nouveau Riche
-desc:Gagner 100 bitcoins
-req:100 money:earned
+name: Nouveau Riche
+desc: Gagner 100 bitcoins
+req: 100 money:earned
 
 *tradernovice
-name:Trader Novice
-desc:Gagner 10k bitcoins
-req:10000 money:earned
+name: Trader Novice
+desc: Gagner 10k bitcoins
+req: 10000 money:earned
 
 *carvroumvroum
-name:X6 Vroum Vroum
-desc:Acheter le BMW X6 de Carlos
-req:1 xsix
+name: X6 Vroum Vroum
+desc: Acheter le BMW X6 de Carlos
+req: 1 xsix
 
 *traderamateur
-name:Trader Amateur
-desc:Gagner 500k bitcoins
-req:500000 money:earned
+name: Trader Amateur
+desc: Gagner 500k bitcoins
+req: 500000 money:earned
 
 *traderpro
-name:Trader Pro
-desc:Gagner 1M de Bitcoins
-req:1000000 money:earned
+name: Trader Pro
+desc: Gagner 1M de Bitcoins
+req: 1000000 money:earned
 
 *traderexpert
-name:Expert Trader
-desc:Gagner 500M de BTC!
-req:500000000 money:earned
+name: Expert Trader
+desc: Gagner 500M de BTC!
+req: 500000000 money:earned
 
 *formationgo
-name:GO FORMATION
-desc:Acheter le siège social de Go Formation.
-req:1 goform
+name: GO FORMATION
+desc: Acheter le siège social de Go Formation.
+req: 1 goform
 
 *tradecron
-name:Cron Trader
-desc:Gagner 5000M de BTC!
-req:5000000000 money:earned
+name: Cron Trader
+desc: Gagner 5000M de BTC!
+req: 5000000000 money:earned
+
