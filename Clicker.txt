@@ -77,10 +77,9 @@ tag:ursaf
 
 *sandrine
 name:Sandrine
-desc:Sandrine pousse Carlos à travailler plus. Augmente tes revenus de tes Carlos de 15% et tes clicks par 0,1%.
-cost:4000000000 money
+desc:Sandrine pousse Carlos à travailler plus. Augmente tes revenus de tes Carlos de 15%.
+cost: 100 money
 passive:multiply money yield of printer by 1.25
-passive:multiply money yield of bitcoin by 1.01
 tag:person
 
 Upgrades
