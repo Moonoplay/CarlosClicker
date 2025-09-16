@@ -10,8 +10,14 @@ Settings
 background: https://static.vecteezy.com/ti/vecteur-libre/p1/9879938-pixel-art-or-et-minerais-recevant-mine-avec-chariot-fond-8bit-vectoriel.jpg
 stylesheets: https://pastebin.com/raw/n85mcWzK
 
-Buttons
+Resources
+*money
+name: Bitcoin
+desc: Tout ce bitcoin est à toi, tu es riche!
+icon: https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools%20(1).png
 
+
+Buttons
 *bitcoin
 name: Bitcoin
 desc: Appuie sur ce bouton pour miner du BTC 
@@ -19,12 +25,6 @@ on click: yield 1 money
 class:bigButton
 icon: https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools.png
 
-
-Resources
-*money
-name: Bitcoin
-desc: Tout ce bitcoin est à toi, tu es riche!
-icon: https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools%20(1).png
 
 Buildings
 *printer
