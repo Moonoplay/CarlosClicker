@@ -15,7 +15,7 @@ Buttons
 name: Bitcoin
 desc: Appuie sur ce bouton pour miner du BTC 
 on click: yield 1 money
-class: bigButton hasFlares
+class: bigButton
 icon: https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools.png
 
 Resources
