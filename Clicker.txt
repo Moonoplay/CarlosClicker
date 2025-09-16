@@ -161,7 +161,6 @@ cost: 100000000 money
 passive: multiply money yield of gigaprinter by 4
 req: 2 gigaprinter
 
-Click Upgrades
 *clickupgrade1
 name: Souris en papier toilette
 desc: Multiplie tes clics par 2.
