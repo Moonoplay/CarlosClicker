@@ -17,13 +17,7 @@ desc: Tout ce bitcoin est à toi, tu es riche!
 icon: https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools%20(1).png
 
 
-Buttons
-*bitcoin
-name: Bitcoin
-desc: Appuie sur ce bouton pour miner du BTC 
-on click: yield 1 money
-class:bigButton
-icon: https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools.png
+
 
 
 Buildings
