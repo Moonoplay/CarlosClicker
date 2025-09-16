@@ -69,7 +69,6 @@ cost: 20000000 money
 on tick: yield 150000 money
 tag: format
 
-# Nouveaux "Carlos printers" pour progression
 *superprinter
 name: Super Carlos
 desc: Carlos a bu un Red Bull, il double sa productivité!
