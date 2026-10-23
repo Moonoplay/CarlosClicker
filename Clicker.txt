@@ -37,7 +37,7 @@ Buildings
   desc: Développée par Carlos, elle imprime des bitcoins physiques!
   cost: 500 money
   on tick:yield 15 money
-  req: 3 printer:max
+  req: 3 printer
   tag: build
 
 *pcmig
