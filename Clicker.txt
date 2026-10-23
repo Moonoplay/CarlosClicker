@@ -21,7 +21,7 @@ Buttons
   name: Bitcoin
   desc: Appuie sur ce bouton pour miner du BTC 
   on click:yield 1 money
-  class: bigButton
+  class:bigButton
   icon: https://raw.githubusercontent.com/Moonoplay/CarlosClicker/refs/heads/main/output-onlinepngtools.png
 
 Buildings
@@ -220,4 +220,19 @@ Achievements
 *traderpro
   name: Trader Pro
   desc: Gagner 1M de Bitcoins
-  req
+  req: 1000000 money:earned
+
+*traderexpert
+  name: Expert Trader
+  desc: Gagner 500M de BTC!
+  req: 500000000 money:earned
+
+*formationgo
+  name: GO FORMATION
+  desc: Acheter le siège social de Go Formation.
+  req: 1 goform
+
+*tradecron
+  name: Cron Trader
+  desc: Gagner 5000M de BTC!
+  req: 5000000000 money:earned
